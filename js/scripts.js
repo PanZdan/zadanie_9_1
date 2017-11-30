@@ -4,17 +4,15 @@
 // 	h = prompt('Enter height h');
 
 function getTriangleArea(a, h) {
-	if (a <= 0 && h <= 0) {
+	if (a <= 0 || h <= 0) {
 		return 'Nieprawidłowe dane';
-	}	else {
-			return a * h / 2;
-			}
+	} else {
+		return a * h / 2;
+		}
 }
-getTriangleArea();
-
-var triangle1Area = getTriangleArea(10, 15),
-	triangle2Area = getTriangleArea(15, 25),
-	triangle3Area = getTriangleArea(45, 5);
+var triangle1Area = getTriangleArea(15, 4),
+	triangle2Area = getTriangleArea(0, 25),
+	triangle3Area = getTriangleArea(10, 20);
 
 console.log(triangle1Area);
 console.log(triangle2Area);

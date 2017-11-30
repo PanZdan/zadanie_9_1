@@ -8,7 +8,7 @@ function getTriangleArea(a, h) {
 		return 'Nieprawidłowe dane';
 	} else {
 		return a * h / 2;
-		}
+	}
 }
 var triangle1Area = getTriangleArea(15, 4),
 	triangle2Area = getTriangleArea(0, 25),
